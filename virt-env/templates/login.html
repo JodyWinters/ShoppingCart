@@ -1,5 +1,15 @@
-<html>
-   <body>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Jody Winters</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='header.css') }}"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+     <p>These words should be red.</p>
       <form action = "http://localhost:5000/login" method = "post">
          <p>Enter Name:</p>
          <p><input type = "text" name = "nm" /></p>

@@ -3,18 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title>Jody Winters</title>
-    <link rel="stylesheet" href="header.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='cart.css') }}"/>
   </head>
 
-  <body>
-      <table border = 1>
-         {% for key, value in result.items() %}
+   <body>
+      <header>
+         <h1 class="not-needed">JODY WINTERS</h1>
+         <h1>SHOP PLACE</h1>
+         <h1 class="not-needed">WEB DEV II</h1>
+      </header>
+      <div></div>
+      <article>
+         <table border = 5>
             <tr>
-               <th> {{ key }} </th>
-               <td> {{ value }} </td>
+               <th>PRODUCT</th>
+               <th>PRICE</th>
             </tr>
-         {% endfor %}
-      </table>
+            {% for key, value in result.items() %}
+               <tr>
+                  <td> {{ key }} </td>
+                  <td> {{ value }} </td>
+               </tr>
+            {% endfor %}
+         </table>
+      </article>
+      <form action = "http://localhost:5000/confirmation" method = "POST">
+         <button input type = "To Cart">Finish Tansaction</button>
+      </form>
    </body>
 </html>

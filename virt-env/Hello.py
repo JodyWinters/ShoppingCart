@@ -11,5 +11,9 @@ def result():
       result = request.form
       return render_template("result.html",result = result)
 
+@app.route('/confirmation',methods = ['POST', 'GET'])
+def confirm():
+   return render_template("confirmation.html")      
+
 if __name__ == '__main__':
    app.run(debug = True)

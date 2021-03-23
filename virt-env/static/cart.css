@@ -23,36 +23,31 @@ h1 {
 }
 
 article {
+    display: flex;
+    justify-content: center;
     width: 80vw;
-    height: auto;
+    height: 86vh;
     margin-right: auto;
     margin-left: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
     background: #cccccc;
-}
-
-section {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    height: 360px;
-    border: 5px solid black;
-    border-radius: 30%;
-    margin: 15px 20px 0 20px;
-    align-items: center;
-}
-
-p {
-    margin-top: 8px;
-    margin-bottom: 20px;
-    font-size: 25px;
 }
 
 body {
     background: lightcyan;
+}
+
+table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 300px;
+}
+
+table, th, td {
+    border: 3px solid black;
+}
+
+th {
+    width: 50%;
 }
 
 button {
@@ -61,22 +56,18 @@ button {
     align-items: center;
 }
 
-.button {
+form {
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
     right: 0;
     bottom: 0;
-    width: 130px;
-    height: 50px;
+    width: 200px;
+    height: 70px;
     background-image: radial-gradient(rgb(167, 167, 28), rgb(206, 219, 134));
     z-index: 1;
     border-radius: 25px 0 0 0;
-}
-
-label {
-    font-size: 20px;
 }
 
 @media (max-width:650px) {
@@ -87,4 +78,3 @@ label {
         justify-content: space-around;
     }
 }
-

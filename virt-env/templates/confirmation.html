@@ -3,17 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>Jody Winters</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='header.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='confirm.css') }}"/>
 
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   </head>
 
   <body>
-     <p>These words should be red.</p>
-      <form action = "http://localhost:5000/login" method = "post">
-         <p>Enter Name:</p>
-         <p><input type = "text" name = "nm" /></p>
-         <p><input type = "submit" value = "submit" /></p>
-      </form>
+      <header>
+         <h1 class="not-needed">JODY WINTERS</h1>
+         <h1>SHOP PLACE</h1>
+         <h1 class="not-needed">WEB DEV II</h1>
+      </header>
+      <article>
+         <p>Your order has been confirmed. Allow 1 business day for order proccessing.</p>
+         <p><strong>UPS Tracking</strong> #4235COW343</p>
+         <p>Thank you for purchasing from Shop Place!!</p>
+      </article>
+      
    </body>
 </html>

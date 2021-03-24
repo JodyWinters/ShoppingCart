@@ -16,16 +16,44 @@
       <article>
          <table border = 5>
             <tr>
-               <th>PRODUCT</th>
-               <th>PRICE</th>
+               <th class="pro">PRODUCT</th>
+               <th class="pri">PRICE</th>
             </tr>
             {% for key, value in result.items() %}
                <tr>
-                  <td> {{ key }} </td>
-                  <td> {{ value }} </td>
+                  <td class="product"> {{ key }} </td>
+                  <td class="price"> {{ value }} </td>
                </tr>
             {% endfor %}
          </table>
+         <main>
+            <p><strong>Shipping</strong></p>
+            <div>
+               <input type="radio" id="low" name="shipping" value="">
+               <label for="low">7-10 days $0.00</label>
+            </div>
+            <div>
+               <input type="radio" id="medium" name="shipping" value="">
+               <label for="medium">4-5 days  $10.00</label>
+            </div>
+            <div class="last">
+               <input type="radio" id="high" name="shipping" value="">
+               <label for="high">2-3 days  $28.99</label>
+            </div>
+
+            <div class="last">
+               <p><strong>Shipping Address</strong></p>
+               <p>1010 random street</p>
+               <p>Lancaster, PA 17602</p>
+               <a href="#">Edit</a>
+            </div>
+            <div>
+               <p><strong>Billing Address</strong></p>
+               <p>2563 kinda random street</p>
+               <p>Denver, CO 80014</p>
+               <a href="#">Edit</a>
+            </div>
+         </main>
       </article>
       <form action = "http://localhost:5000/confirmation" method = "POST">
          <button input type = "To Cart">Finish Tansaction</button>

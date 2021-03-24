@@ -24,7 +24,8 @@ h1 {
 
 article {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
     width: 80vw;
     height: 86vh;
     margin-right: auto;
@@ -32,22 +33,66 @@ article {
     background: #cccccc;
 }
 
+main {
+    height: 440px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 3px solid black;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right:20px;
+    font-size: 25px;
+}
+
+p {
+    text-align: center;
+
+}
+
+div {
+    margin-left: 10px;
+}
+
+.last {
+    margin-bottom: 20px;
+}
+
 body {
     background: lightcyan;
+}
+
+a {
+    font-size: 15px;
 }
 
 table {
     margin-top: 20px;
     border-collapse: collapse;
-    width: 300px;
+    font-size: 25px;
 }
 
 table, th, td {
     border: 3px solid black;
 }
 
-th {
-    width: 50%;
+.pri {
+    width: 140px;
+}
+
+.pro {
+    width: 270px;
+}
+
+.price {
+    text-align: right;
+    width: 140px;
+}
+
+.product {
+    text-align: center;
+    width: 270px;
 }
 
 button {
@@ -67,7 +112,7 @@ form {
     height: 70px;
     background-image: radial-gradient(rgb(167, 167, 28), rgb(206, 219, 134));
     z-index: 1;
-    border-radius: 25px 0 0 0;
+    border-radius: 40px 0 0 0;
 }
 
 @media (max-width:650px) {
